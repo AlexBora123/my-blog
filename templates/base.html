@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ SITENAME }}{% if title %} - {{ title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+    {% if SITESUBTITLE %}
+    <meta name="description" content="{{ SITESUBTITLE }}">
+    {% endif %}
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+        <nav>
+            <ul>
+                <li><a href="{{ SITEURL }}/">Home</a></li>
+
+                {% for category, articles in categories %}
+                <li>
+                    <a href="{{ SITEURL }}/category/{{ category.slug }}/index.html">
+                        {{ category.name.replace('_', ' ').title() }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>
+            © {{ SITENAME }} {{ CURRENT_YEAR }}<br>
+        </p>
+    </footer>
+
+</body>
+</html>

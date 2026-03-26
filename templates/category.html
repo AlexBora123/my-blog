@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% set current_category = articles[0].category.slug if articles else "" %}
+
+<h2>{{ current_category.replace('_', ' ').title() }}</h2>
+
+{% if not articles %}
+    <p>No posts yet.</p>
+{% endif %}
+
+{% for article in articles %}
+    <article style="margin-bottom: 30px;">
+        <h3>
+            <a href="{{ SITEURL }}/{{ article.url }}">
+                {{ article.title }}
+            </a>
+        </h3>
+
+        <p>
+            <small>{{ article.date.strftime('%Y-%m-%d') }}</small>
+        </p>
+
+        <p>{{ article.summary }}</p>
+    </article>
+{% endfor %}
+
+{% endblock %}

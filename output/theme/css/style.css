@@ -1,0 +1,23 @@
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #F0F9FF;  /* light, elegant background */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            .center-box {
+    display: grid;
+    place-items: center;
+}
+        }
+
+        h1,h2,h3,p {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #0C4A6E;
+            margin-top: 1em;
+        }
+
+        a{
+            color: #0284C7;
+            text-decoration: none;
+        }

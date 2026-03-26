@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<article class="post">
+
+    <h1>{{ article.title }}</h1>
+
+    <p class="post-meta">
+        <small>Published on {{ article.date.strftime('%Y-%m-%d') }}
+        {% if article.category %} | Category: <a href="{{ SITEURL }}/category/{{ article.category.slug }}/">{{ article.category.name.replace('_', ' ').title() }}</a>{% endif %}
+        </small>
+    </p>
+
+    <div class="post-content">
+        {{ article.content }}
+    </div>
+
+</article>
+
+{% endblock %}

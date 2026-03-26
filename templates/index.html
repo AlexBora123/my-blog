@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Intro -->
+<section style="margin-bottom: 40px;">
+    <h2>About</h2>
+    <p>
+        Hello! My name is Alex and this is my blog where I will post the little projects, reviews and thoughts about books and photos :D.
+    </p>
+</section>
+<section>
+    <h2>Latest Posts</h2>
+
+    {% for article in articles[:3] %}
+        <article style="margin-bottom: 25px;">
+            <h3>
+                <a href="{{ SITEURL }}/{{ article.url }}">
+                    {{ article.title }}
+                </a>
+            </h3>
+
+            <p>
+                <small>{{ article.date.strftime('%Y-%m-%d') }}</small>
+            </p>
+
+            <p>{{ article.summary }}</p>
+
+            <a href="{{ SITEURL }}/{{ article.url }}">Read more →</a>
+        </article>
+    {% endfor %}
+</section>
+
+{% endblock %}
