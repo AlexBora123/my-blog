@@ -1,5 +1,4 @@
-AUTHOR = 'Alexandru Bora'
-SITENAME = 'Code and Critique'
+SITENAME = 'Spiral of Code'
 SITEURL = ""
 
 PATH = "content"

@@ -1,75 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>Code and Critique</title>
+    <title>Spiral of Code</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/theme/css/style.css">
 </head>
 
 <body>
-
-    <header>
-        <h1><a href="/">Code and Critique</a></h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-
-                <li>
-                    <a href="/category/book_reviews/index.html">
-                        Book Reviews
+    <div class="container">
+        <section>
+            <header>
+                <h1 class="site-header">
+                    <a href="/" class="logo-link">
+                        <img src="/images/theodorus.gif" alt="Spiral of Code" class="site-logo">
+                        <span class="site-name">Spiral of Code</span>
                     </a>
-                </li>
-                <li>
-                    <a href="/category/photos/index.html">
-                        Photos
-                    </a>
-                </li>
-                <li>
-                    <a href="/category/projects/index.html">
-                        Projects
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
 
-    <main>
+                        <li>
+                            <a href="/category/book_reviews/index.html">
+                                Book Reviews
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/category/photos/index.html">
+                                Photos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/category/projects/index.html">
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-<!-- Intro -->
-<section style="margin-bottom: 40px;">
-    <h2>About</h2>
-    <p>
-        Hello! My name is Alex and this is my blog where I will post the little projects, reviews and thoughts about books and photos :D.
-    </p>
-</section>
-<section>
-    <h2>Latest Posts</h2>
+            <main>
+<div class="container">
 
-        <article style="margin-bottom: 25px;">
-            <h3>
-                <a href="/projects/tracking-tortoises.html">
-                    Tracking Tortoises
-                </a>
-            </h3>
-
-            <p>
-                <small>2026-03-15</small>
-            </p>
-
-            <p><p>My first project using computer vision to track tortoises.</p></p>
-
-            <a href="/projects/tracking-tortoises.html">Read more →</a>
-        </article>
-</section>
-
-    </main>
-
-    <footer>
+    <section>
+        <h2>About</h2>
         <p>
-            © Code and Critique <br>
+            Hello! My name is Alex and this is my blog where I will post little projects, reviews and thoughts about books and photos :D.
         </p>
-    </footer>
+    </section>
 
+    <section>
+        <h2>Latest Posts</h2>
+
+            <article>
+                <h3>
+                    <a href="/projects/tracking-tortoises.html">
+                        Tracking Tortoises
+                    </a>
+                </h3>
+
+                <p>
+                    <small>2026-03-15</small>
+                </p>
+
+                <p><p>My first project using computer vision to track tortoises.</p></p>
+
+                <a href="/projects/tracking-tortoises.html">Read more →</a>
+            </article>
+    </section>
+
+</div>
+            </main>
+
+            <footer>
+                <p>
+                    Keep shining ❤<br>
+                </p>
+            </footer>
+        </section>
+    </div>
+
+<script>
+  const video = document.getElementsByClassName("site-logo");
+  video.loop = false;
+
+  video.addEventListener("ended", () => {
+    video.pause();
+  });
+</script>
 </body>
+
 </html>

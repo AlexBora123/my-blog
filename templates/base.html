@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>{{ SITENAME }}{% if title %} - {{ title }}{% endif %}</title>
@@ -11,34 +12,51 @@
 </head>
 
 <body>
-
-    <header>
-        <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
-        <nav>
-            <ul>
-                <li><a href="{{ SITEURL }}/">Home</a></li>
-
-                {% for category, articles in categories %}
-                <li>
-                    <a href="{{ SITEURL }}/category/{{ category.slug }}/index.html">
-                        {{ category.name.replace('_', ' ').title() }}
+    <div class="container">
+        <section>
+            <header>
+                <h1 class="site-header">
+                    <a href="{{ SITEURL }}/" class="logo-link">
+                        <img src="{{ SITEURL }}/images/theodorus.gif" alt="{{ SITENAME }}" class="site-logo">
+                        <span class="site-name">{{ SITENAME }}</span>
                     </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </nav>
-    </header>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="{{ SITEURL }}/">Home</a></li>
 
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
+                        {% for category, articles in categories %}
+                        <li>
+                            <a href="{{ SITEURL }}/category/{{ category.slug }}/index.html">
+                                {{ category.name.replace('_', ' ').title() }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </header>
 
-    <footer>
-        <p>
-            © {{ SITENAME }} {{ CURRENT_YEAR }}<br>
-        </p>
-    </footer>
+            <main>
+                {% block content %}
+                {% endblock %}
+            </main>
 
+            <footer>
+                <p>
+                    Keep shining ❤<br>
+                </p>
+            </footer>
+        </section>
+    </div>
+
+<script>
+  const video = document.getElementsByClassName("site-logo");
+  video.loop = false;
+
+  video.addEventListener("ended", () => {
+    video.pause();
+  });
+</script>
 </body>
+
 </html>

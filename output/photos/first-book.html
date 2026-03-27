@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>Code and Critique</title>
+    <title>Spiral of Code</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/theme/css/style.css">
 </head>
 
 <body>
-
-    <header>
-        <h1><a href="/">Code and Critique</a></h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-
-                <li>
-                    <a href="/category/book_reviews/index.html">
-                        Book Reviews
+    <div class="container">
+        <section>
+            <header>
+                <h1 class="site-header">
+                    <a href="/" class="logo-link">
+                        <img src="/images/theodorus.gif" alt="Spiral of Code" class="site-logo">
+                        <span class="site-name">Spiral of Code</span>
                     </a>
-                </li>
-                <li>
-                    <a href="/category/photos/index.html">
-                        Photos
-                    </a>
-                </li>
-                <li>
-                    <a href="/category/projects/index.html">
-                        Projects
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
 
-    <main>
+                        <li>
+                            <a href="/category/book_reviews/index.html">
+                                Book Reviews
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/category/photos/index.html">
+                                Photos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/category/projects/index.html">
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
 
 <article class="post">
 
@@ -51,13 +58,24 @@
 
 </article>
 
-    </main>
+            </main>
 
-    <footer>
-        <p>
-            © Code and Critique <br>
-        </p>
-    </footer>
+            <footer>
+                <p>
+                    Keep shining ❤<br>
+                </p>
+            </footer>
+        </section>
+    </div>
 
+<script>
+  const video = document.getElementsByClassName("site-logo");
+  video.loop = false;
+
+  video.addEventListener("ended", () => {
+    video.pause();
+  });
+</script>
 </body>
+
 </html>
