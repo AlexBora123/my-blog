@@ -90,10 +90,11 @@
             flex: 1 1 calc(33.33% - 1rem);
             
         }
+
         .site-header {
-        margin-left: 0 !important;
+        margin-left: -3em;
         padding: 0;
-        }   
+        }
 
     }
 
@@ -135,10 +136,7 @@
         }
     }
 
-    .site-header {
-        margin-left: -3em;
-        padding: 0;
-    }
+    
 
     .logo-link {
         display: inline-flex;            
