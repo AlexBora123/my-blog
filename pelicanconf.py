@@ -1,5 +1,7 @@
 THEME = 'notmyidea' 
 
+SITENAME = 'Spiral of code'
+
 SITEURL = 'https://spiralofcode.vercel.app'
 
 RELATIVE_URLS = False
