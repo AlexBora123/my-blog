@@ -1,10 +1,7 @@
-# 1. Add a basic theme so Pelican doesn't get confused
 THEME = 'notmyidea' 
 
-# 2. Set your new URL (the one we picked earlier)
 SITEURL = 'https://spiralofcode.vercel.app'
 
-# 3. Make sure this is False for production
 RELATIVE_URLS = False
 
 PATH = "content"
@@ -13,7 +10,6 @@ TIMEZONE = 'Europe/Rome'
 
 DEFAULT_LANG = 'en'
 
-# Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
