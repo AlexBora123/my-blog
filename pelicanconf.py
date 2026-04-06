@@ -1,5 +1,11 @@
-SITENAME = 'Spiral of Code'
-SITEURL = ""
+# 1. Add a basic theme so Pelican doesn't get confused
+THEME = 'notmyidea' 
+
+# 2. Set your new URL (the one we picked earlier)
+SITEURL = 'https://spiralofcode.vercel.app'
+
+# 3. Make sure this is False for production
+RELATIVE_URLS = False
 
 PATH = "content"
 
