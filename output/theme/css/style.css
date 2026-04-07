@@ -7,19 +7,21 @@
         color: #0C4A6E;
     }
 
-    header h1{
+    header h1 {
         font-size: 2.5rem;
     }
 
-    small{
+    small {
         color: #0c4a6e90;
     }
 
-    small a{
+    small a {
         color: #0c2d6e90
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-family: 'Playfair Display', serif;
         font-weight: 700;
         margin-top: 1em;
@@ -57,7 +59,7 @@
     }
 
 
-    
+
 
     .container section {
         flex: 1 1 100%;
@@ -69,22 +71,22 @@
     @media (min-width: 768px) {
         .container section {
             flex: 1 1 calc(33.33% - 1rem);
-            
+
         }
 
         .container {
-       display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
 
-        max-width: 1500px;
-        margin: 0 auto;
-        padding: 1.5rem;
-    }
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
 
         .site-header {
-        margin-left: -3em;
-        padding: 0;
+            margin-left: -3em;
+            padding: 0;
         }
 
     }
@@ -102,7 +104,7 @@
     }
 
     nav ul {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     footer {
@@ -115,30 +117,49 @@
 
     @media (max-width: 480px) {
         .container {
-            padding: 1rem;
+            padding: 0.8rem;
+        }
+
+        .container section {
+        flex: 1 1 100%;
+        background: white;
+        padding: 0.5rem;
+        border-radius: 12px;
         }
 
         header {
-            padding: 1rem;
+            padding: 0.5rem;
         }
 
         .site-logo {
-            display: none !important;              
+            display: none !important;
         }
+
+        nav ul {
+            font-size: 4.5vw;
+        }
+        body {
+        font-family: 'Merriweather', serif;
+        background-color: #f2f9fd;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: #0C4A6E;
+    }
     }
 
-    
-
     .logo-link {
-        display: inline-flex;            
-        align-items: center;       
-        text-decoration: none;     
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
     }
 
     .site-logo {
-        height: 3em;              
-        width: auto;               
+        height: 3em;
+        width: auto;
     }
 
 
-    svg { background-color: white; }
+    svg {
+        background-color: white;
+    }
